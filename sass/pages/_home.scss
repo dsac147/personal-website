@@ -1,0 +1,132 @@
+.container{
+    padding: 2rem;
+    position: relative;
+}
+
+.nav{
+    z-index: 999;
+    position: absolute;
+    &__logo{
+        position: fixed;
+        top: 0rem;
+        left: 0rem;
+        &-svg{
+            width: 10rem;
+            text-shadow:$fixed-elements-shadow;
+            
+        }
+    }
+    &__cta{
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background-color: $color-orange;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        box-shadow: $fixed-elements-shadow;
+        &-btn{
+            padding: 0.8rem 1.8rem;
+
+            &__text{
+                font-size: 1.4rem;
+                color: $color-white;
+                font-weight: 400;
+            }
+            &__icon{
+                padding-left: .5rem
+            }
+        }
+    }
+    &__switch{
+        &-checkbox{
+            display: none;
+        }
+        &-button{
+            background-color: $color-grey;
+            height: 3.5rem;
+            width: 3.5rem;
+            position: fixed;
+            bottom: 2.6rem;
+            right: 2rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: $fixed-elements-shadow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-speaker{
+                width: 55%;
+            }
+        }
+    }
+
+    &__gotop{
+        &-button{
+            background-color: $color-grey;
+            height: 3.5rem;
+            width: 3.5rem;
+            position: fixed;
+            bottom: 7.5rem;
+            right: 2rem;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: $fixed-elements-shadow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(100px);
+            &-arrow{
+                width: 45%;
+            }
+        }
+    }
+    &__menu{
+        list-style: none;
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+    }
+    &__menu li a{
+        font-weight: 300;
+        font-size: 1.5rem;
+        color: $color-grey;
+        text-shadow:$fixed-elements-shadow;
+        backface-visibility: hidden;
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+    }
+    &__menu .active{
+        color: $color-white;
+        font-size: 1.7rem;
+        text-shadow:-.5rem .5rem 1.2rem rgba($color:#000, $alpha: 0.3);
+        transition:0.3s;
+    }
+    
+    &__menu li a::before{
+        content: "";
+        height: 0.2rem;
+        width: 0;
+        background: $color-grey;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        transition:0.3s;
+    }
+    &__menu li a:hover::before{
+        width: 1.5rem;
+    }
+
+}
+
+section{
+    padding-top: 14.2rem;
+}
+
+//nav logo animation
+#background{
+    opacity: 0;
+}
+#lines{
+    opacity: 0;
+}
+

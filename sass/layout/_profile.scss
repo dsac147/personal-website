@@ -1,0 +1,50 @@
+.profile{
+    display: flex;
+    &__image{
+        position: relative;
+        &-img{
+            width: 39rem;
+        }
+        &-heading{
+            position: absolute;
+            top: 1rem;
+            left: -14rem;
+            transform-origin: 50% 50%;
+            transform: rotate(270deg);
+        }
+    }
+    &__text{
+        padding-left: 2.5rem;
+        &-details{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    &:nth-of-type(1){
+        padding-bottom: 0.5rem;
+    }
+}
+
+.column{
+    flex: 0 47.5%;
+    display: flex;
+    &-space{
+        flex: 0 0 5%
+    }
+    &-section{
+        &-left{
+            display: flex;
+            flex: 0 0 30%;
+            justify-content: space-between;
+        }
+        &-right{
+            padding-left: 1rem;
+        }
+    }
+}
+

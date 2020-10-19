@@ -1,0 +1,74 @@
+.card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+    padding: 2.5rem 0;
+}
+
+.card {
+    position: relative;
+    height: 35rem;
+    width: 26rem;
+    background: $color-yellow;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: 0.4s all ease-in-out;
+    z-index: 1;
+    box-shadow: $box-shadow;
+    cursor: pointer; 
+}
+.card-image {
+    position: absolute;
+    top: 0;
+    height: 26rem;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: 0.4s all ease-in-out;
+}
+
+.card-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 0 2rem 2rem;
+}
+.card-title {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.1rem;
+    color: $color-black;
+}
+.card-text {
+    font-size: 1.4rem;
+    letter-spacing: 0.15rem;
+    font-weight: 400;
+    color: $color-orange;
+    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+}
+.card-text:last-child {
+    letter-spacing: unset;
+}
+.card:hover {
+    scale:1.1;
+    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-shadow: -2rem 2.5rem 3rem rgba(0, 0, 0, 0.25);
+}
+.card:hover img{
+    transition: all 0.3s;
+    transform: scale(1.4);
+}
+.card:hover .card-image {
+    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+    height: 100%;
+    opacity: 0.3;
+}
+
+.card:hover .card-text{
+    color: $color-white;
+}

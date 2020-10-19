@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is
+    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-blue;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Poppins', sans-serif;
+    color: $color-white;
+    font-weight: 300;
+}
+
+.js-loading{
+  animation-play-state: paused !important;
+}
+
+::selection {
+    background-color: rgba($color:$color-yellow, $alpha: .99);
+    color:rgba($color:$color-blue, $alpha: .99);
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-blue;
+    width: .6rem;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 1rem 0 0 1rem;
+    background: $color-orange; 
+    width: .6rem;
+    height: 30rem;
+}
