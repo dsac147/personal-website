@@ -14,8 +14,6 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #273c75;
-  background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
   font-family: 'Poppins', sans-serif;
   color: #f5f6fa;
   font-weight: 300; }
@@ -158,9 +156,62 @@ body {
 .card:hover .card-text {
   color: #f5f6fa; }
 
+.contactform {
+  width: 100%;
+  padding: 0 5rem; }
+  .contactform__label {
+    font-family: 'Poppins', sans-serif;
+    color: #7f8fa6;
+    font-weight: 300;
+    font-size: 1.5rem;
+    outline: none; }
+    .contactform__label-box {
+      padding: 1rem 0 0.5rem 0; }
+    .contactform__label-box:nth-of-type(1) {
+      padding: 0rem 0 0.5rem 0; }
+  .contactform__input {
+    width: 100%;
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    border: 1px solid #7f8fa6;
+    border-radius: 2px;
+    padding: 0.75rem 0.75rem; }
+  .contactform__button {
+    width: 100%;
+    padding: 2rem 5rem; }
+    .contactform__button-text {
+      background-color: #7f8fa6;
+      border-radius: 0.2rem;
+      padding: 1rem 4rem;
+      font-size: 1.5rem;
+      color: #f5f6fa;
+      font-weight: 300; }
+
+::-webkit-input-placeholder {
+  color: #f5f6fa; }
+
+:-moz-placeholder {
+  /* Upto Firefox 18, Deprecated in Firefox 19  */
+  color: #f5f6fa; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #f5f6fa; }
+
+:-ms-input-placeholder {
+  color: #f5f6fa; }
+
+input:focus, textarea:focus, select:focus {
+  border: none;
+  outline: 1.5px solid #f5f6fa;
+  color: #f5f6fa; }
+
 .blog__card {
   display: flex;
-  margin: 15rem 5rem 0 0; }
+  margin: 15rem 5rem 0 0;
+  min-height: 50rem; }
   .blog__card-left {
     padding-left: 12rem;
     flex: 0 0 60%;
@@ -243,7 +294,7 @@ body {
     box-shadow: -0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
     padding: 1.2rem 4rem; }
     .blog__cta-btn__text {
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #f5f6fa;
       font-weight: 400; }
 
@@ -314,7 +365,39 @@ body {
         opacity: 0.8; }
 
 .contact {
-  min-height: 150vh; }
+  background-color: #7f8fa6;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact__container {
+    display: flex;
+    flex-direction: row; }
+  .contact__1 {
+    padding: 4rem; }
+  .contact__2 {
+    padding: 4rem; }
+  .contact__btn {
+    text-decoration: none; }
+  .contact__cta1 {
+    background-color: transparent;
+    border: 5px solid #e84118;
+    border-radius: 0.2rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+    padding: .7rem 6.8rem; }
+    .contact__cta1-text {
+      font-size: 2rem;
+      color: #f5f6fa;
+      font-weight: 400;
+      text-shadow: -0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3); }
+  .contact__cta2 {
+    background-color: #e84118;
+    border-radius: 0.2rem;
+    box-shadow: -0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 1.2rem 4rem; }
+    .contact__cta2-text {
+      font-size: 2rem;
+      color: #f5f6fa;
+      font-weight: 400; }
 
 .experiences {
   position: relative; }
@@ -356,6 +439,112 @@ body {
       justify-content: space-between; }
     .experiences__text-role {
       font-size: 1.3rem; }
+
+.footer {
+  min-height: 80vh;
+  background-color: #0e0e0e; }
+  .footer__container1 {
+    display: flex;
+    flex-direction: column; }
+  .footer__container2 {
+    display: flex;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    padding: 3rem 0; }
+  .footer__container3 {
+    display: flex;
+    flex-direction: row; }
+  .footer__container4 {
+    flex: 0 0 44%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .footer__container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer__container5-line {
+      width: 0.1rem;
+      height: 105%;
+      background-color: #7f8fa6;
+      opacity: 90%; }
+  .footer__container6 {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .footer__container6-text {
+      width: 100%;
+      padding: 0 5rem;
+      color: #7f8fa6;
+      font-weight: 300;
+      font-size: 1.5rem; }
+
+#logoanimation {
+  overflow: visible;
+  width: 17rem;
+  transform-origin: center center; }
+
+.getintouch {
+  width: 65%;
+  height: 5rem;
+  margin: 2rem 5rem;
+  background: #f5f6fa;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.1), inset 5px 2px 10px rgba(0, 0, 0, 0.1); }
+
+.getintouch:hover {
+  transform: scale(1.05); }
+
+.getintouch span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #7f8fa6;
+  color: #f5f6fa;
+  text-align: center;
+  z-index: 999;
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  transition: 0.6s linear;
+  border-radius: 0.2rem; }
+
+.getintouch:hover span {
+  transform: translate(-100%);
+  transition-delay: 0.3s; }
+
+.getintouch a {
+  flex: 1;
+  font-size: 2.5rem;
+  color: #0e0e0e;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear; }
+
+.getintouch:hover a {
+  opacity: 1;
+  transform: translateX(0); }
+
+.getintouch a:nth-of-type(1) {
+  transition-delay: 1s; }
+
+.getintouch a:nth-of-type(2) {
+  transition-delay: 0.8s; }
+
+.getintouch a:nth-of-type(3) {
+  transition-delay: 0.6s; }
+
+.getintouch a:nth-of-type(4) {
+  transition-delay: 0.4s; }
 
 .header {
   position: relative; }
@@ -507,7 +696,9 @@ body {
 
 .container {
   padding: 2rem;
-  position: relative; }
+  position: relative;
+  background-color: #273c75;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E"); }
 
 .nav {
   z-index: 999;

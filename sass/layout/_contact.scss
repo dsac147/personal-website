@@ -1,3 +1,43 @@
 .contact{
-    min-height: 150vh;//test
+    background-color: $color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__container{
+        display: flex;
+        flex-direction: row;
+    }
+    &__1{
+        padding: 4rem;
+    }
+    &__2{
+        padding: 4rem;
+    }
+    &__btn{
+        text-decoration: none;
+    }
+    &__cta1{
+        background-color: transparent;
+        border: 5px solid $color-orange;
+        border-radius: 0.2rem;
+        box-shadow: $fixed-elements-shadow;
+        padding: .7rem 6.8rem;
+        &-text{
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 400;
+            text-shadow: $fixed-elements-shadow;
+        }
+    }
+    &__cta2{
+        background-color: $color-orange;
+        border-radius: 0.2rem;
+        box-shadow: $fixed-elements-shadow;
+        padding: 1.2rem 4rem;
+        &-text{
+            font-size: 2rem;
+            color: $color-white;
+            font-weight: 400;
+        }
+    }
 }

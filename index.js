@@ -50,6 +50,11 @@ document.getElementById("explore").addEventListener("click", () => {
     gsap.to(window, {duration: 1.2, scrollTo:{y:"#section1"},ease: "power2.out"});
 });
 
+//contact us cta
+document.getElementById("nav__cta").addEventListener("click", () => {
+    gsap.to(window, {duration: 1.2, scrollTo:{y:"#section6"},ease: "power2.out"});
+});
+
 //landing page animation
 gsap.to(".anime1",{opacity:1,duration:1,y:0,stagger:0.6});
 gsap.from(".header__image",{opacity:0,scale:0.8,duration:1});
@@ -92,3 +97,7 @@ tll.to("#lineh",{attr:{x2:0},ease: "power1.out"},)
 	.to(".cls-1",{opacity:"1",ease: "power2.out"},"-=1.2");
 
 //project cards
+
+//footer logo animation
+TweenMax.to('#squares', 2.5, { rotation: "+=450", repeat:-1,  ease:Power3.easeOut
+, transformOrigin:"50% 50%" });

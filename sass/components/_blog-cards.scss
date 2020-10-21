@@ -1,6 +1,7 @@
 .blog__card{
     display: flex;
     margin: 15rem 5rem 0 0;
+    min-height: 50rem;
     &-left{
         padding-left: 12rem;
         flex: 0 0 60%;
@@ -92,7 +93,7 @@
         box-shadow: $fixed-elements-shadow;
         padding: 1.2rem 4rem;
         &__text{
-            font-size: 2.5rem;
+            font-size: 2rem;
             color: $color-white;
             font-weight: 400;
         }
