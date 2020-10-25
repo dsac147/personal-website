@@ -1,6 +1,7 @@
 .footer{
     min-height: 80vh;//test
     background-color: $color-black;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.125' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
     &__container1{
         display: flex;
         flex-direction: column;
@@ -87,14 +88,15 @@
     text-align: center;
     z-index: 999;
     font-size: 2rem;
-    padding: 1rem 4rem;
-    transition: 0.6s linear;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    transition: 0.4s ease;
     border-radius: 0.2rem;
 }
 
 .getintouch:hover span{
     transform: translate(-100%);
-    transition-delay: 0.3s;
+    transition-delay: 0.15s;
 }
 
 .getintouch a{
@@ -112,7 +114,6 @@
     transform: translateX(0);
 }
 
-.getintouch a:nth-of-type(1) { transition-delay: 1s;}
-.getintouch a:nth-of-type(2) { transition-delay: 0.8s;}
-.getintouch a:nth-of-type(3) { transition-delay: 0.6s;}
-.getintouch a:nth-of-type(4) { transition-delay: 0.4s;}
+.getintouch a:nth-of-type(1) { transition-delay: 0.7s;}
+.getintouch a:nth-of-type(2) { transition-delay: 0.6s;}
+.getintouch a:nth-of-type(3) { transition-delay: 0.4s;}

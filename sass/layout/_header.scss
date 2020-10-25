@@ -42,11 +42,20 @@
 .arrow{
     z-index: 10;
     margin-top:2rem;
+    transition: 0.4s;
     &-img{
         width: 10rem;
         cursor: pointer;
+        transition: 0.4s;
+    }
+    &-img:hover{
+        transform: scale(1.1);
+    }
+    &-img:active{
+        transform: scale(0.9);
     }
 }
+
 
 .bounce{
     animation: bounce 2s infinite;

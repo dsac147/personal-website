@@ -91,11 +91,36 @@
         background-color: $color-orange;
         border-radius: 0.2rem;
         box-shadow: $fixed-elements-shadow;
-        padding: 1.2rem 4rem;
+        padding: 1.2rem 4rem 0.4rem 4rem;
+        overflow: hidden;
+        transition: 0.4s;
         &__text{
             font-size: 2rem;
             color: $color-white;
             font-weight: 400;
         }
+    }
+    &-btn:hover {
+      background-color: $color-orange-light;
+      transform: scale(1.05);
+      box-shadow: $fixed-elements-shadow-lighter;
+    }
+    &-btn:active{
+      background-color: $color-orange-darker;
+      transform: scale(0.9);
+      transform: translateY(2px);
+      box-shadow: $fixed-elements-shadow-darker;
+    }
+    &-btn span{
+      display: flex;
+      width: 100px;
+      height: 10px;
+      background: #e5e5e5;
+      filter: blur(7px);
+      transform: rotate(110deg) translateX(10px) translateY(120px);
+      transition: 0.4s;
+    }
+    &-btn:hover span{
+      transform: rotate(110deg) translateX(-80px) translateY(-220px);
     }
   }

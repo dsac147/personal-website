@@ -27,17 +27,44 @@
         text-decoration: none;
         box-shadow: $fixed-elements-shadow;
         &-btn{
-            padding: 0.8rem 1.8rem;
-
+            overflow: hidden;
+            transition: 0.6s;
+            padding: 0.5rem 2rem 0.5rem 2rem;
             &__text{
                 font-size: 1.4rem;
                 color: $color-white;
                 font-weight: 400;
             }
-            &__icon{
-                padding-left: .5rem
-            }
         }
+        
+        &-btn:hover{
+            background-color: $color-orange-light;
+            transform: scale(1.05);
+        }
+        &-btn span{
+            display: flex;
+            width: 70px;
+            height: 2px;
+            background: #e5e5e5;
+            filter: blur(3px);
+            transform: rotate(110deg) translateX(8px) translateY(60px);
+            transition: 0.6s;
+        }
+        &-btn:hover span{
+            transform: rotate(110deg) translateX(-30px) translateY(-100px);
+        }
+        &-btn:active{
+            background-color: $color-orange-darker;
+        }
+
+    }
+    &__cta:hover{
+        box-shadow: $fixed-elements-shadow-lighter;
+    }
+    &__cta:active{
+        transform: scale(0.9);
+        transform: translateY(2px);
+        box-shadow: $fixed-elements-shadow-darker;
     }
     &__switch{
         &-checkbox{
@@ -132,3 +159,7 @@ section{
     opacity: 0;
 }
 
+.resumeicon{
+    font-size: 1.3rem;
+    font-weight: 300;
+}

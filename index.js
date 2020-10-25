@@ -60,6 +60,20 @@ gsap.to(".anime1",{opacity:1,duration:1,y:0,stagger:0.6});
 gsap.from(".header__image",{opacity:0,scale:0.8,duration:1});
 gsap.to(".image-border",{opacity:1,duration:1});
 
+// //active class togggle
+// document.getElementById("section2").each(function() {
+//   // Content Reveal Animation
+//   ScrollTrigger.create({
+//     trigger: "#section2",
+//     start: "top 80%",
+//     end: "bottom 100px",
+//     onEnter: () => $(this).addClass('active'),
+//     onLeave: () => $(this).removeClass('active'),
+//     onEnterBack: () => $(this).addClass('active'),
+//     onLeaveBack: () => $(this).removeClass('active'),
+//   });
+// });
+
 //projects animation
 var tlp = gsap.timeline({scrollTrigger:{
 				trigger:"#section4",

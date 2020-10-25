@@ -28,13 +28,15 @@
     &__button{
         width: 100%;
         padding: 2rem 5rem;
+        position: relative;
         &-text{
             background-color: $color-grey;
             border-radius: 0.2rem;
-            padding: 1rem 4rem;
+            padding: 1rem 5.5rem 1rem 3rem;
             font-size: 1.5rem;
             color: $color-white;
             font-weight: 300;
+            text-transform: uppercase;
         }
     }
 }
@@ -56,4 +58,11 @@
     border: none;
     outline: 1.5px solid $color-white; 
     color: $color-white;
+}
+
+.mail-icon{
+    font-size: 1.75rem;
+    position: absolute;
+    left: 17rem;
+    top: 3rem;
 }
