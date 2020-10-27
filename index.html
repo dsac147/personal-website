@@ -373,11 +373,11 @@
                 <div class="card-row">
                     <div class="card">
                         <img class="card-image" src="./img/65975(1).png">
-                        <div class="card-open">
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <label class="" for="modal-open">
+                            <div class="card-open">
                                 <i class="fas fa-plus-circle card-open-icon"></i>
-                            </a>
-                        </div>
+                            </div>
+                        </label>
                         <div class="card-footer">
                             <p class="card-text">DESIGN</p>
                             <P class="card-title">TEDx BMSITM 2020</P>
@@ -509,7 +509,7 @@
             <div class="contact__1">
                 <a href="https://dsac147.github.io/Resume/" target="_blank" class="contact__btn" rel="noopener noreferrer">
                     <div class="contact__cta1">
-                        <div class="contact__cta1-text">VIEW RESUME&nbsp&nbsp<i class="far fa-eye"></i></i></div>
+                        <div class="contact__cta1-text">VIEW RESUME&nbsp&nbsp<i class="far fa-eye"></i></div>
                         <span></span>
                     </div>
                 </a>
@@ -517,7 +517,7 @@
             <div class="contact__2">
                 <a href="https://drive.google.com/file/d/1r7NTRhsB8rIFTEU1Zwdmh-I95npizOuw/view" target="_blank" class="contact__btn" rel="noopener noreferrer">
                     <div class="contact__cta2">
-                        <div        class="contact__cta2-text">DOWNLOAD RESUME&nbsp&nbsp<i class="far fa-file-pdf"></i>
+                        <div class="contact__cta2-text">DOWNLOAD RESUME&nbsp&nbsp<i class="far fa-file-pdf"></i>
                         </div>
                         <span></span>
                     </div>
@@ -606,9 +606,120 @@
                 </div>
             </div>
         </div>
+        <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio" />
+        <div class="modal">
+            <label class="modal-label overlay">
+                <input type="radio" name="modal" value="close" class="modal-radio"/>
+            </label>
+            <div class="content">
+                <label class="modal-label close-btn">
+                    <input type="radio" name="modal" value="close" class="modal-radio"/>
+                </label>
+                <div class="content__left">
+                    <section class="carousel" aria-label="Gallery">
+                        <ol class="carousel__viewport">
+                          <li id="carousel__slide1"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper">
+                              <a href="#carousel__slide4"
+                                 class="carousel__prev">Go to last slide</a>
+                                 <img class="carousel__image" src="./img/preview.png" alt="">
+                              <a href="#carousel__slide2"
+                                 class="carousel__next">Go to next slide</a>
+                            </div>
+                          </li>
+                          <li id="carousel__slide2"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide1"
+                               class="carousel__prev">Go to previous slide</a>
+                               <img class="carousel__image" src="./img/screenshot2.png" alt="">
+                            <a href="#carousel__slide3"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide3"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide2"
+                               class="carousel__prev">Go to previous slide</a>
+                               <img class="carousel__image" src="./img/screenshot3.png" alt="">
+                            <a href="#carousel__slide4"
+                               class="carousel__next">Go to next slide</a>
+                          </li>
+                          <li id="carousel__slide4"
+                              tabindex="0"
+                              class="carousel__slide">
+                            <div class="carousel__snapper"></div>
+                            <a href="#carousel__slide3"
+                               class="carousel__prev">Go to previous slide</a>
+                               <img class="carousel__image" src="./img/screenshot1.png" alt="">
+                            <a href="#carousel__slide1"
+                               class="carousel__next">Go to first slide</a>
+                          </li>
+                        </ol>
+                        <aside class="carousel__navigation">
+                          <ol class="carousel__navigation-list">
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide1"
+                                 class="carousel__navigation-button">Go to slide 1</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide2"
+                                 class="carousel__navigation-button">Go to slide 2</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide3"
+                                 class="carousel__navigation-button">Go to slide 3</a>
+                            </li>
+                            <li class="carousel__navigation-item">
+                              <a href="#carousel__slide4"
+                                 class="carousel__navigation-button">Go to slide 4</a>
+                            </li>
+                          </ol>
+                        </aside>
+                    </section>
+                </div>
+                <div class="content__right">
+                    <div class="content__right-heading">
+                        COVID-19 TRACKER
+                    </div>
+                    <div class="content__right-date">
+                        JULY 2020
+                    </div>
+                    <div class="content__right-technology">
+                        <ul>
+                            <li>&bull;&nbsp&nbspAsynch JavaScript</li>
+                            <li>&bull;&nbsp&nbspGoogle Charts</li>
+                            <li>&bull;&nbsp&nbspAPI fetch via Axios</li>
+                            <li>&bull;&nbsp&nbspSASS/SCSS</li>
+                        </ul>
+                    </div>
+                    <div class="content__right-about">
+                        A modern dashboard for analysis of Covid-19 cases in India based on daily data changes,statewise data distribution and map/chart visualisation.Preview of this dashboard is available here.
+                    </div>
+                    <div class="content__right-buttons">
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="content__right-links">
+                            <div class="externallink">
+                                <i class="fas fa-external-link-alt externallink__icon"></i>
+                            </div>
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="content__right-links">
+                            <div class="githublink">
+                                <i class="fab fa-github  githublink__icon"></i>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
     </div>
     <div class="cursor"></div>
     <div class="cursor-point"></div>
+    
     <script>
         //hide buttons
         document.querySelector(".nav__gotop-button").style.opacity = "0";
@@ -641,30 +752,3 @@
     <script src="./index.js"></script>
 </body>
 </html>
-
-
-
-
-    
-        <label class="" for="modal-open">
-            <p>Open Modal</p>
-        </label>
-        <input type="radio" name="modal" value="open" id="modal-open" class="modal-radio" />
-        <div class="modal">
-            <label class="modal-label overlay">
-                <input type="radio" name="modal" value="close" class="modal-radio"/>
-            </label>
-            <div class="content">
-                <div class="top">
-                    <h2>Heading </h2>
-                    <label class="modal-label close-btn">
-                        <input type="radio" name="modal" value="close" class="modal-radio"/>
-                    </label>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-        </div>
-    
-
-     
-         
