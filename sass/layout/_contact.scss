@@ -1,94 +1,93 @@
-.contact{
-    background-color: $color-grey;
+.contact {
+  background-color: $color-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    &__container{
-        display: flex;
-        flex-direction: row;
+    flex-direction: row;
+  }
+  &__1 {
+    padding: 4rem;
+  }
+  &__2 {
+    padding: 4rem;
+  }
+  &__btn {
+    text-decoration: none;
+  }
+  &__cta1 {
+    background-color: transparent;
+    border: 4px solid $color-orange;
+    border-radius: 0.2rem;
+    box-shadow: $fixed-elements-shadow;
+    padding: 0.6rem 6rem 0rem 6rem;
+    overflow: hidden;
+    transition: 0.4s;
+    &-text {
+      font-size: 2rem;
+      color: $color-white;
+      font-weight: 400;
+      text-shadow: $fixed-elements-shadow;
     }
-    &__1{
-        padding: 4rem;
+  }
+  &__cta1:hover {
+    background-color: $color-orange-light;
+    transform: scale(1.05);
+    box-shadow: $fixed-elements-shadow-lighter;
+  }
+  &__cta1:active {
+    background-color: $color-orange-darker;
+    transform: scale(0.9);
+    transform: translateY(2px);
+    box-shadow: $fixed-elements-shadow-darker;
+  }
+  &__cta1 span {
+    display: flex;
+    width: 100px;
+    height: 10px;
+    background: #e5e5e5;
+    filter: blur(7px);
+    transform: rotate(110deg) translateX(10px) translateY(130px);
+    transition: 0.4s;
+  }
+  &__cta1:hover span {
+    transform: rotate(110deg) translateX(-80px) translateY(-230px);
+  }
+  &__cta2 {
+    background-color: $color-orange;
+    border-radius: 0.2rem;
+    box-shadow: $fixed-elements-shadow;
+    padding: 1.2rem 4rem 0.3rem 4rem;
+    overflow: hidden;
+    transition: 0.4s;
+    &-text {
+      font-size: 2rem;
+      color: $color-white;
+      font-weight: 400;
     }
-    &__2{
-        padding: 4rem;
-    }
-    &__btn{
-        text-decoration: none;
-    }
-    &__cta1{
-        background-color: transparent;
-        border: 4px solid $color-orange;
-        border-radius: 0.2rem;
-        box-shadow: $fixed-elements-shadow;
-        padding: 0.6rem 6rem 0rem 6rem;
-        overflow: hidden;
-        transition: 0.4s;
-        &-text{
-            font-size: 2rem;
-            color: $color-white;
-            font-weight: 400;
-            text-shadow: $fixed-elements-shadow;
-        }
-    }
-    &__cta1:hover{
-        background-color: $color-orange-light;
-        transform: scale(1.05);
-        box-shadow: $fixed-elements-shadow-lighter;
-    }
-    &__cta1:active{
-        background-color: $color-orange-darker;
-        transform: scale(0.9);
-        transform: translateY(2px);
-        box-shadow: $fixed-elements-shadow-darker;
-    }
-    &__cta1 span{
-        display: flex;
-        width: 100px;
-        height: 10px;
-        background: #e5e5e5;
-        filter: blur(7px);
-        transform: rotate(110deg) translateX(10px) translateY(130px);
-        transition: 0.4s;
-    }
-    &__cta1:hover span{
-        transform: rotate(110deg) translateX(-80px) translateY(-230px);
-    }
-    &__cta2{
-        background-color: $color-orange;
-        border-radius: 0.2rem;
-        box-shadow: $fixed-elements-shadow;
-        padding: 1.2rem 4rem 0.3rem 4rem;
-        overflow: hidden;
-        transition: 0.4s;
-        &-text{
-            font-size: 2rem;
-            color: $color-white;
-            font-weight: 400;
-        }
-    }
-    &__cta2:hover {
-        background-color: $color-orange-light;
-        transform: scale(1.05);
-        box-shadow: $fixed-elements-shadow-lighter;
-    }
-    &__cta2:active{
-        background-color: $color-orange-darker;
-        transform: scale(0.9);
-        transform: translateY(2px);
-        box-shadow: $fixed-elements-shadow-darker;
-    }
-    &__cta2 span{
-        display: flex;
-        width: 100px;
-        height: 10px;
-        background: #e5e5e5;
-        filter: blur(7px);
-        transform: rotate(110deg) translateX(10px) translateY(120px);
-        transition: 0.4s;
-    }
-    &__cta2:hover span{
-        transform: rotate(110deg) translateX(-80px) translateY(-220px);
-    }
-
+  }
+  &__cta2:hover {
+    background-color: $color-orange-light;
+    transform: scale(1.05);
+    box-shadow: $fixed-elements-shadow-lighter;
+  }
+  &__cta2:active {
+    background-color: $color-orange-darker;
+    transform: scale(0.9);
+    transform: translateY(2px);
+    box-shadow: $fixed-elements-shadow-darker;
+  }
+  &__cta2 span {
+    display: flex;
+    width: 100px;
+    height: 10px;
+    background: #e5e5e5;
+    filter: blur(7px);
+    transform: rotate(110deg) translateX(10px) translateY(120px);
+    transition: 0.4s;
+  }
+  &__cta2:hover span {
+    transform: rotate(110deg) translateX(-80px) translateY(-220px);
+  }
 }

@@ -1,53 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-    // This defines what 1rem is
-    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
 
 body {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: $color-white;
-    font-weight: 300;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: $color-white;
+  font-weight: 300;
 }
 
-.js-loading{
+.js-loading {
   animation-play-state: paused !important;
 }
 
 ::selection {
-    background-color: rgba($color:$color-yellow, $alpha: .99);
-    color:rgba($color:$color-blue, $alpha: .99);
+  background-color: rgba($color: $color-yellow, $alpha: 0.99);
+  color: rgba($color: $color-blue, $alpha: 0.99);
 }
 
 ::-webkit-scrollbar {
-    width: .6rem;
+  width: 0.6rem;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: $color-blue;
-    width: .6rem;
+  background: $color-blue;
+  width: 0.6rem;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    border-radius: 1rem 0 0 1rem;
-    background: $color-orange; 
-    width: .6rem;
-    height: 30rem;
+  border-radius: 1rem 0 0 1rem;
+  background: $color-orange;
+  width: 0.6rem;
+  height: 30rem;
 }
 
 //cursor

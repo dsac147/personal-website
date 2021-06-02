@@ -1,119 +1,124 @@
-.footer{
-    min-height: 80vh;//test
-    background-color: $color-black;
-    background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.125' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
-    &__container1{
-        display: flex;
-        flex-direction: column;
-    }
-    &__container2{
-        display: flex;
-        position: relative;
-        overflow:visible;
-        justify-content: center;
-        padding: 3rem 0;
-    }
-    &__container3{
-        display: flex;
-        flex-direction: row;
-    }
-    &__container4{
-        flex: 0 0 44%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    &__container5{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        &-line{
-            width: 0.1rem;
-            height: 105%;
-            background-color: $color-grey;
-            opacity: 90%;
-        }
-    }
-    &__container6{
-        flex: 0 0 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        &-text{
-            width: 100%;
-            padding: 0 5rem;
-            color: $color-grey;
-            font-weight: 300;
-            font-size: 1.5rem;
-        }
-    }
-}
-
-#logoanimation{
-    overflow:visible;
-    width:17rem;
-    transform-origin:center center;
-}
-
-.getintouch{
-    width: 65%;
-    height: 5rem;
-    margin: 2rem 5rem;
-    background: $color-white;
-    border-radius: 0.2rem;
-    overflow: hidden;
+.footer {
+  min-height: 80vh; //test
+  background-color: $color-black;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.125' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+  &__container1 {
+    display: flex;
+    flex-direction: column;
+  }
+  &__container2 {
+    display: flex;
+    position: relative;
+    overflow: visible;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  &__container3 {
+    display: flex;
+    flex-direction: row;
+  }
+  &__container4 {
+    flex: 0 0 44%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    cursor: pointer;
-    transition: 0.3s linear;
-    box-shadow: 0 0 4rem rgba($color: #000000, $alpha: 0.1),
-    inset 5px 2px 10px rgba($color: #000000, $alpha: 0.1);
-    &-text{
-        
+  }
+  &__container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-line {
+      width: 0.1rem;
+      height: 105%;
+      background-color: $color-grey;
+      opacity: 90%;
     }
+  }
+  &__container6 {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-text {
+      width: 100%;
+      padding: 0 5rem;
+      color: $color-grey;
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+  }
 }
 
-.getintouch:hover{
-    transform: scale(1.05);
+#logoanimation {
+  overflow: visible;
+  width: 17rem;
+  transform-origin: center center;
 }
 
-.getintouch span{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: $color-grey;
-    color: $color-white;
-    text-align: center;
-    z-index: 999;
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding: 1rem 3rem;
-    transition: 0.4s ease;
-    border-radius: 0.2rem;
+.getintouch {
+  width: 65%;
+  height: 5rem;
+  margin: 2rem 5rem;
+  background: $color-white;
+  border-radius: 0.2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s linear;
+  box-shadow: 0 0 4rem rgba($color: #000000, $alpha: 0.1),
+    inset 5px 2px 10px rgba($color: #000000, $alpha: 0.1);
+  &-text {
+  }
 }
 
-.getintouch:hover span{
-    transform: translate(-100%);
-    transition-delay: 0.15s;
+.getintouch:hover {
+  transform: scale(1.05);
 }
 
-.getintouch a{
-    flex: 1;
-    font-size: 2.5rem;
-    color: $color-black;
-    text-align: center;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: 0.3s linear;
+.getintouch span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $color-grey;
+  color: $color-white;
+  text-align: center;
+  z-index: 999;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  transition: 0.4s ease;
+  border-radius: 0.2rem;
 }
 
-.getintouch:hover a{
-    opacity: 1;
-    transform: translateX(0);
+.getintouch:hover span {
+  transform: translate(-100%);
+  transition-delay: 0.15s;
 }
 
-.getintouch a:nth-of-type(1) { transition-delay: 0.7s;}
-.getintouch a:nth-of-type(2) { transition-delay: 0.6s;}
-.getintouch a:nth-of-type(3) { transition-delay: 0.4s;}
+.getintouch a {
+  flex: 1;
+  font-size: 2.5rem;
+  color: $color-black;
+  text-align: center;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.getintouch:hover a {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.getintouch a:nth-of-type(1) {
+  transition-delay: 0.7s;
+}
+.getintouch a:nth-of-type(2) {
+  transition-delay: 0.6s;
+}
+.getintouch a:nth-of-type(3) {
+  transition-delay: 0.4s;
+}

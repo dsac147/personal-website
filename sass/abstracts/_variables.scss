@@ -1,20 +1,40 @@
 //font color
-$color-blue:#273c75;
-$color-yellow:#ffd032;
-$color-white:#f5f6fa;
-$color-grey:#7f8fa6;
-$color-orange:#e84118;
-$color-orange-darker:#cf3a15;
-$color-orange-light:#ec542e;
-$color-black:#0e0e0e;
+$color-blue: #273c75;
+$color-yellow: #ffd032;
+$color-white: #f5f6fa;
+$color-grey: #7f8fa6;
+$color-orange: #e84118;
+$color-orange-darker: #cf3a15;
+$color-orange-light: #ec542e;
+$color-black: #0e0e0e;
 
 //font size
 
 
 //body
 
-$box-shadow:-.8rem .8rem 1.5rem rgba($color:#000, $alpha: 0.4);
-$fixed-elements-shadow-lighter:-.3rem .3rem 1rem rgba($color:#000, $alpha: 0.2);
-$fixed-elements-shadow:-.3rem .3rem 1rem rgba($color:#000, $alpha: 0.3);
-$fixed-elements-shadow-darker:-.3rem .3rem 1rem rgba($color:#000, $alpha: 0.4);
-$text-shadow:-1rem 1rem 2rem rgba($color:#000, $alpha: 0.25);
+$box-shadow: -0.8rem 0.8rem 1.5rem
+  rgba(
+    $color: #000,
+    $alpha: 0.4,
+  );
+$fixed-elements-shadow-lighter: -0.3rem 0.3rem 1rem
+  rgba(
+    $color: #000,
+    $alpha: 0.2,
+  );
+$fixed-elements-shadow: -0.3rem 0.3rem 1rem
+  rgba(
+    $color: #000,
+    $alpha: 0.3,
+  );
+$fixed-elements-shadow-darker: -0.3rem 0.3rem 1rem
+  rgba(
+    $color: #000,
+    $alpha: 0.4,
+  );
+$text-shadow: -1rem 1rem 2rem
+  rgba(
+    $color: #000,
+    $alpha: 0.25,
+  );

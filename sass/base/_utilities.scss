@@ -1,31 +1,30 @@
-
-.image-border{
-    border: 2rem solid $color-grey;
-    border-radius: .2rem;
-    box-shadow: $box-shadow;
-    opacity: 0;
+.image-border {
+  border: 2rem solid $color-grey;
+  border-radius: 0.2rem;
+  box-shadow: $box-shadow;
+  opacity: 0;
 }
 
-.hline{
-    margin: 1.75rem 0 1.25rem 0;
-    height: 0.075rem;
-    width: 100%;
-    background-color: $color-grey;
-    opacity: 90%;
+.hline {
+  margin: 1.75rem 0 1.25rem 0;
+  height: 0.075rem;
+  width: 100%;
+  background-color: $color-grey;
+  opacity: 90%;
 }
 
-.section-break-first{
-    margin-top: 70rem;
+.section-break-first {
+  margin-top: 70rem;
 }
 
-.margin-left{
-    margin-left: 18rem;
+.margin-left {
+  margin-left: 18rem;
 }
 
-.margin-right{
-    margin-right: 5.1rem;
+.margin-right {
+  margin-right: 5.1rem;
 }
 
-.paragraph-break{
-    margin-bottom: 2rem;
+.paragraph-break {
+  margin-bottom: 2rem;
 }

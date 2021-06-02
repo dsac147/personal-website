@@ -1,165 +1,166 @@
-.container{
-    padding: 2rem;
-    position: relative;
-    background-color: $color-blue;
-    background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+.container {
+  padding: 2rem;
+  position: relative;
+  background-color: $color-blue;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='37.5' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231d2d58' fill-opacity='0.2' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
 }
 
-.nav{
-    z-index: 999;
-    position: absolute;
-    &__logo{
-        position: fixed;
-        top: 0rem;
-        left: 0rem;
-        &-svg{
-            width: 10rem;
-            text-shadow:$fixed-elements-shadow;
-            
-        }
+.nav {
+  z-index: 999;
+  position: absolute;
+  &__logo {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    &-svg {
+      width: 10rem;
+      text-shadow: $fixed-elements-shadow;
     }
-    &__cta{
-        position: fixed;
-        top: 2rem;
-        right: 2rem;
-        background-color: $color-orange;
-        border-radius: 0.2rem;
-        text-decoration: none;
-        box-shadow: $fixed-elements-shadow;
-        &-btn{
-            overflow: hidden;
-            transition: 0.6s;
-            padding: 0.5rem 2rem 0.5rem 2rem;
-            &__text{
-                font-size: 1.4rem;
-                color: $color-white;
-                font-weight: 400;
-            }
-        }
-        
-        &-btn:hover{
-            background-color: $color-orange-light;
-            transform: scale(1.05);
-        }
-        &-btn span{
-            display: flex;
-            width: 70px;
-            height: 2px;
-            background: #e5e5e5;
-            filter: blur(3px);
-            transform: rotate(110deg) translateX(8px) translateY(60px);
-            transition: 0.6s;
-        }
-        &-btn:hover span{
-            transform: rotate(110deg) translateX(-30px) translateY(-100px);
-        }
-        &-btn:active{
-            background-color: $color-orange-darker;
-        }
-
-    }
-    &__cta:hover{
-        box-shadow: $fixed-elements-shadow-lighter;
-    }
-    &__cta:active{
-        transform: scale(0.9);
-        transform: translateY(2px);
-        box-shadow: $fixed-elements-shadow-darker;
-    }
-    &__switch{
-        &-checkbox{
-            display: none;
-        }
-        &-button{
-            background-color: $color-grey;
-            height: 3.5rem;
-            width: 3.5rem;
-            position: fixed;
-            bottom: 2.6rem;
-            right: 2rem;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: $fixed-elements-shadow;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &-speaker{
-                width: 55%;
-            }
-        }
-    }
-
-    &__gotop{
-        &-button{
-            background-color: $color-grey;
-            height: 3.5rem;
-            width: 3.5rem;
-            position: fixed;
-            bottom: 7.5rem;
-            right: 2rem;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: $fixed-elements-shadow;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transform: translateX(100px);
-            &-arrow{
-                width: 45%;
-            }
-        }
-    }
-    &__menu{
-        list-style: none;
-        position: fixed;
-        left: 2rem;
-        bottom: 2rem;
-    }
-    &__menu li a{
-        font-weight: 300;
-        font-size: 1.5rem;
-        color: $color-grey;
-        text-shadow:$fixed-elements-shadow;
-        backface-visibility: hidden;
-        align-items: center;
-        display: flex;
-        text-decoration: none;
-    }
-    &__menu .active{
+  }
+  &__cta {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-color: $color-orange;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    box-shadow: $fixed-elements-shadow;
+    transition: 0.6s;
+    cursor: pointer;
+    &-btn {
+      overflow: hidden;
+      transition: 0.6s;
+      padding: 0.5rem 2rem 0.5rem 2rem;
+      &__text {
+        font-size: 1.4rem;
         color: $color-white;
-        font-size: 1.7rem;
-        text-shadow:-.5rem .5rem 1.2rem rgba($color:#000, $alpha: 0.3);
-        transition:0.3s;
-    }
-    
-    &__menu li a::before{
-        content: "";
-        height: 0.2rem;
-        width: 0;
-        background: $color-grey;
-        margin-right: 0.5rem;
-        margin-left: 0.5rem;
-        transition:0.3s;
-    }
-    &__menu li a:hover::before{
-        width: 1.5rem;
+        font-weight: 400;
+      }
     }
 
+    &-btn:hover {
+      background-color: $color-orange-light;
+      transform: scale(1.05);
+      transition: 0.2s;
+    }
+    &-btn span {
+      display: flex;
+      width: 70px;
+      height: 2px;
+      background: #e5e5e5;
+      filter: blur(3px);
+      transform: rotate(110deg) translateX(8px) translateY(60px);
+      transition: 0.6s;
+    }
+    &-btn:hover span {
+      transform: rotate(110deg) translateX(-30px) translateY(-100px);
+    }
+    &-btn:active {
+      background-color: $color-orange-darker;
+    }
+  }
+  &__cta:hover {
+    box-shadow: $fixed-elements-shadow-lighter;
+    transition: 0.2s;
+  }
+  &__cta:active {
+    transform: scale(0.9);
+    transform: translateY(2px);
+    box-shadow: $fixed-elements-shadow-darker;
+  }
+  &__switch {
+    &-checkbox {
+      display: none;
+    }
+    &-button {
+      background-color: $color-grey;
+      height: 3.5rem;
+      width: 3.5rem;
+      position: fixed;
+      bottom: 2.6rem;
+      right: 2rem;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: $fixed-elements-shadow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-speaker {
+        width: 55%;
+      }
+    }
+  }
+
+  &__gotop {
+    &-button {
+      background-color: $color-grey;
+      height: 3.5rem;
+      width: 3.5rem;
+      position: fixed;
+      bottom: 7.5rem;
+      right: 2rem;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: $fixed-elements-shadow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(100px);
+      &-arrow {
+        width: 45%;
+      }
+    }
+  }
+  &__menu {
+    list-style: none;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+  }
+  &__menu li a {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $color-grey;
+    text-shadow: $fixed-elements-shadow;
+    backface-visibility: hidden;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+  }
+  &__menu .active {
+    color: $color-white;
+    font-size: 1.7rem;
+    text-shadow: -0.5rem 0.5rem 1.2rem rgba($color: #000, $alpha: 0.3);
+    transition: 0.3s;
+  }
+
+  &__menu li a::before {
+    content: '';
+    height: 0.2rem;
+    width: 0;
+    background: $color-grey;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+  }
+  &__menu li a:hover::before {
+    width: 1.5rem;
+  }
 }
 
-section{
-    padding-top: 14.2rem;
+section {
+  padding-top: 14.2rem;
 }
 
 //nav logo animation
-#background{
-    opacity: 0;
+#background {
+  opacity: 0;
 }
-#lines{
-    opacity: 0;
+#lines {
+  opacity: 0;
 }
 
-.resumeicon{
-    font-size: 1.3rem;
-    font-weight: 300;
+.resumeicon {
+  font-size: 1.3rem;
+  font-weight: 300;
 }

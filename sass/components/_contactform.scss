@@ -1,68 +1,72 @@
-.contactform{
+.contactform {
+  width: 100%;
+  padding: 0 5rem;
+  &__label {
+    font-family: 'Poppins', sans-serif;
+    color: $color-grey;
+    font-weight: 300;
+    font-size: 1.5rem;
+    outline: none;
+
+    &-box {
+      padding: 1rem 0 0.5rem 0;
+    }
+    &-box:nth-of-type(1) {
+      padding: 0rem 0 0.5rem 0;
+    }
+  }
+  &__input {
     width: 100%;
-    padding: 0 5rem;
-    &__label{
-        font-family: 'Poppins', sans-serif;
-        color: $color-grey;
-        font-weight: 300;
-        font-size: 1.5rem;
-        outline: none;
-        
-        &-box{
-            padding: 1rem 0 0.5rem 0;
-        }
-        &-box:nth-of-type(1) {
-            padding: 0rem 0 0.5rem 0;
-        }
+    background-color: #121212;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 1.25rem;
+    border: 1px solid $color-grey;
+    border-radius: 2px;
+    padding: 0.75rem 0.75rem;
+  }
+  &__button {
+    width: 100%;
+    padding: 2rem 5rem;
+    position: relative;
+    &-text {
+      background-color: $color-grey;
+      border-radius: 0.2rem;
+      padding: 1rem 5.5rem 1rem 3rem;
+      font-size: 1.5rem;
+      color: $color-white;
+      font-weight: 300;
+      text-transform: uppercase;
     }
-    &__input{
-        width: 100%;
-        background-color: #121212;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 300;
-        font-size: 1.25rem;
-        border: 1px solid $color-grey;
-        border-radius: 2px;
-        padding: 0.75rem 0.75rem;
-    }
-    &__button{
-        width: 100%;
-        padding: 2rem 5rem;
-        position: relative;
-        &-text{
-            background-color: $color-grey;
-            border-radius: 0.2rem;
-            padding: 1rem 5.5rem 1rem 3rem;
-            font-size: 1.5rem;
-            color: $color-white;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
-    }
+  }
 }
 
 ::-webkit-input-placeholder {
-    color: $color-white;
- }
- :-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
-    color: $color-white; 
- }
- ::-moz-placeholder {  /* Firefox 19+ */
-    color: $color-white;
- }
- :-ms-input-placeholder {  
-    color: $color-white;
- }
-
- input:focus, textarea:focus, select:focus{
-    border: none;
-    outline: 1.5px solid $color-white; 
-    color: $color-white;
+  color: $color-white;
+}
+:-moz-placeholder {
+  /* Upto Firefox 18, Deprecated in Firefox 19  */
+  color: $color-white;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $color-white;
+}
+:-ms-input-placeholder {
+  color: $color-white;
 }
 
-.mail-icon{
-    font-size: 1.75rem;
-    position: absolute;
-    left: 17rem;
-    top: 3rem;
+input:focus,
+textarea:focus,
+select:focus {
+  border: none;
+  outline: 1.5px solid $color-white;
+  color: $color-white;
+}
+
+.mail-icon {
+  font-size: 1.75rem;
+  position: absolute;
+  left: 17rem;
+  top: 3rem;
 }

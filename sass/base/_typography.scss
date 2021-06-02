@@ -1,26 +1,30 @@
-.section{
-    &-heading{
-        font-family: Voga-Medium;
-        color: $color-yellow;
-        font-size: 13rem;
-        text-shadow: $text-shadow;
-        z-index: 10;
+.section {
+  &-heading {
+    font-family: Voga-Medium;
+    color: $color-yellow;
+    font-size: 13rem;
+    text-shadow: $text-shadow;
+    z-index: 10;
+  }
+  &__content {
+    font-size: 1.75rem;
+    &-subheading {
+      font-size: 2rem;
+      text-decoration: underline;
+      font-weight: 400;
     }
-    &__content{
-        font-size:1.75rem ;
-        &-subheading{
-            font-size: 2rem;
-            text-decoration: underline;
-            font-weight: 400;
-        }
-    }
+  }
 }
 
-.bullet{
-    &-large{
-        margin-left: -1.1rem;
-    }
-    &-small{
-        margin-left: -0.7rem;
-    }
+.bullet {
+  &-large {
+    margin-left: -1.1rem;
+  }
+  &-small {
+    margin-left: -0.7rem;
+  }
+}
+
+.underline{
+  text-decoration: underline;
 }

@@ -1,0 +1,7 @@
+<svg id="drawing" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 5018.82 4592.52">
+  <title>portrait-initial</title>
+  <image id="top" width="871" height="628" transform="translate(2201.87)" xlink:href="./top-80.jpg"/>
+  <image id="bottom" width="798" height="306" transform="translate(2009.94 4286.52)" xlink:href="./bottom-80.jpg"/>
+  <image id="right" width="1017" height="456" transform="translate(4001.82 2538.79)" xlink:href="./right.png"/>
+  <image id="left" width="1086" height="1363" transform="translate(0 1736.02)" xlink:href="./left.png"/>
+</svg>

@@ -1,194 +1,216 @@
 .card-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
-    padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+  padding: 2.5rem 0;
 }
 
 .card {
-    position: relative;
-    height: 35rem;
-    width: 26rem;
-    background: $color-yellow;
-    border-radius: 2px;
-    overflow: hidden;
-    transition: 0.4s all ease-in-out;
-    z-index: 1;
-    box-shadow: $box-shadow; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  height: 35rem;
+  width: 26rem;
+  background: $color-yellow;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: 0.4s all ease-in-out;
+  z-index: 1;
+  box-shadow: $box-shadow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-image {
-    position: absolute;
-    top: 0;
-    height: 26rem;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    transition: 0.4s all ease-in-out;
+  position: absolute;
+  top: 0;
+  height: 26rem;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  transition: 0.4s all ease-in-out;
 }
 
-.card-open{
-    transition: 0.4s all ease-in-out;
-    font-size: 1rem;
-    opacity: 0;
-    cursor: pointer;
+.card-open {
+  transition: 0.4s all ease-in-out;
+  font-size: 1rem;
+  opacity: 0;
+  cursor: pointer;
 }
 
-.card-open-icon{
-    color: $color-white;
-    text-decoration: none;
+.card-open-icon {
+  color: $color-white;
+  text-decoration: none;
 }
 
 .card-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    box-sizing: border-box;
-    padding: 0 2rem 2rem;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+  padding: 0 2rem 2rem;
 }
 .card-title {
-    font-size: 2rem;
-    line-height: 2.1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.1rem;
-    color: $color-black;
+  font-size: 2rem;
+  line-height: 2.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+  color: $color-black;
 }
 .card-text {
-    font-size: 1.4rem;
-    letter-spacing: 0.15rem;
-    font-weight: 400;
-    color: $color-orange;
-    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  font-weight: 400;
+  color: $color-orange;
+  transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
 }
 .card-text:last-child {
-    letter-spacing: unset;
+  letter-spacing: unset;
 }
 .card:hover {
-    scale:1.1;
-    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    box-shadow: -2rem 2.5rem 3rem rgba(0, 0, 0, 0.25);
+  scale: 1.1;
+  transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  box-shadow: -2rem 2.5rem 3rem rgba(0, 0, 0, 0.25);
 }
-.card:hover .card-open{
-    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
-    font-size: 5rem;
-    opacity: 1;
+.card:hover .card-open {
+  transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+  font-size: 5rem;
+  opacity: 1;
 }
 
-.card:hover img{
-    transition: all 0.3s;
-    transform: scale(1.4);
+.card:hover img {
+  transition: all 0.3s;
+  transform: scale(1.4);
 }
 .card:hover .card-image {
-    transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
-    height: 100%;
-    opacity: 0.15;
+  transition: 0.4s all cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+  height: 100%;
+  opacity: 0.15;
 }
 
-.card:hover .card-text{
-    color: $color-white;
+.card:hover .card-text {
+  color: $color-white;
 }
 
 .modal-radio {
-    position: absolute;
-    visibility: hidden;
-    opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .modal {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity 0.4s cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s, transform 0.4s cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
-    z-index:9999;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.4s cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s,
+    transform 0.4s cubic-bezier(0.28, 0.01, 0.3, 1.02) 0.2s;
+  z-index: 9999;
 }
 
+#modal-open-1:checked + .modal {
+  opacity: 1;
+  transform: scale(1);
+}
+#modal-open-2:checked + .modal {
+  opacity: 1;
+  transform: scale(1);
+}
 
-#modal-open:checked + .modal {
-    opacity: 1;
-    transform: scale(1);
+#modal-open-3:checked + .modal {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#modal-open-4:checked + .modal {
+  opacity: 1;
+  transform: scale(1);
+}
+#modal-open-5:checked + .modal {
+  opacity: 1;
+  transform: scale(1);
+}
+#modal-open-6:checked + .modal {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .modal .content {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 110rem;
-    max-width: 85%;
-    height: 55rem;
-    max-height: 85%;
-    margin: auto auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: $box-shadow;
-    padding: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 110rem;
+  max-width: 85%;
+  height: 55rem;
+  max-height: 85%;
+  margin: auto auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  padding: 0;
 }
 
-.content{
-    color: $color-black;
+.content {
+  color: $color-black;
+  margin: 0;
+  padding: 0;
+  background-color: $color-white;
+  &__left {
+    flex: 0 0 65%;
     margin: 0;
     padding: 0;
     background-color: $color-white;
-    &__left{
-        flex: 0 0 65%;
-        margin: 0;
-        padding: 0;
-        background-color: $color-white;
-    }
-    &__right{
-        flex: 0 0 35%
-    }
+  }
+  &__right {
+    flex: 0 0 35%;
+  }
 }
 
 .close-btn {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 1rem;
-    right: 1rem;
-    border-radius: 50%;
-    border: 2px solid $color-orange;
-    cursor: pointer;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  border: 2px solid $color-orange;
+  cursor: pointer;
 }
 
 .close-btn:after,
 .close-btn:before {
-    content: "";
-    position: absolute;
-    width: 70%;
-    height: 2px;
-    background: $color-orange;
-    left : 15%;
-    top: 50%;
-    top: calc(50% - 1px);
-    transform-origin: 50% 50%;
-    transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background: $color-orange;
+  left: 15%;
+  top: 50%;
+  top: calc(50% - 1px);
+  transform-origin: 50% 50%;
+  transform: rotate(45deg);
 }
 
 .close-btn:before {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }

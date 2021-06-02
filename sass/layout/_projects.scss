@@ -1,72 +1,73 @@
-.projects{
-    position: relative;
-    &__heading{
-        position: absolute;
-        top: 19rem;
-        right: -6rem;
-        transform-origin: 50% 50%;
-        transform: rotate(90deg);
-    }
-    &__container{
-        display: flex;
-        margin-right: 20rem;
-        &-image{
-            position: relative;
-            min-width: 40rem !important;
-            background-color: $color-grey;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 48.5rem;
-            box-shadow: $box-shadow;
-        }
-        &-text{
-            flex: 0 0 53%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            &-content{
-                font-size: 4rem;
-                &1{
-                    padding-left:6rem;
-                    position: relative;
-                    &-start{
-                        position: absolute;
-                        top: -2.5rem;
-                        left: 1.5rem;
-                        opacity: 0.8;
-                    }
-                }
-                &2{
-                    padding-left:13rem;
-                    position: relative;
-                    &-end{
-                        position: absolute;
-                        bottom: -2rem;
-                        right: -4rem;
-                        opacity: 0.8;
-                    }
-                }
-            }
-        }
-    }
-    &__cards{
-        margin: 10rem 18rem ;
-    }
-    &__line{
-        
-    }
-}
-
-.portraitofalady{
+.projects {
+  position: relative;
+  &__heading {
     position: absolute;
-    top: -8.25rem;
-    left: -8rem;
-    -webkit-filter: drop-shadow(-.8rem .8rem 1.5rem rgba($color:#000, $alpha: 0.6));
-    filter: drop-shadow(-.8rem .8rem 1.5rem rgba($color:#000, $alpha: 0.6));
+    top: 19rem;
+    right: -6rem;
+    transform-origin: 50% 50%;
+    transform: rotate(90deg);
+  }
+  &__container {
+    display: flex;
+    margin-right: 20rem;
+    &-image {
+      position: relative;
+      min-width: 40rem !important;
+      background-color: $color-grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 48.5rem;
+      box-shadow: $box-shadow;
+    }
+    &-text {
+      flex: 0 0 53%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-content {
+        font-size: 4rem;
+        &1 {
+          padding-left: 6rem;
+          position: relative;
+          &-start {
+            position: absolute;
+            top: -2.5rem;
+            left: 1.5rem;
+            opacity: 0.8;
+          }
+        }
+        &2 {
+          padding-left: 13rem;
+          position: relative;
+          &-end {
+            position: absolute;
+            bottom: -2rem;
+            right: -4rem;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  &__cards {
+    margin: 10rem 18rem;
+  }
+  &__line {
+  }
 }
 
-#quote{
-    position: relative;
-    z-index: 10;
+.portraitofalady {
+  position: absolute;
+  top: -8.25rem;
+  left: -8rem;
+  -webkit-filter: drop-shadow(
+    -0.8rem 0.8rem 1.5rem rgba($color: #000, $alpha: 0.6)
+  );
+  filter: drop-shadow(-0.8rem 0.8rem 1.5rem rgba($color: #000, $alpha: 0.6));
+}
+
+#quote {
+  position: relative;
+  z-index: 10;
 }
