@@ -1,13 +1,13 @@
 .header {
   position: relative;
   &__text {
-    font-family: Voga-Medium;
+    font-family: 'Oswald', sans-serif;
     color: $color-yellow;
-    font-size: 17.5rem;
-    line-height: 95%;
+    font-size: 14rem;
+    line-height: 110%;
     text-shadow: $text-shadow;
     z-index: 10;
-    margin-top: 11.5rem;
+    margin-top: 15rem;
     position: absolute;
     &-title {
       position: relative;
@@ -15,19 +15,28 @@
   }
   &__image {
     width: 43rem;
+    height: 56rem;
     position: absolute;
     top: 7rem;
     right: 5.5rem;
     opacity: 1;
     scale: 1;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: linear-gradient(
+      130deg,
+      #ff7a18,
+      #af002d 41.07%,
+      #319197 76.05%
+    );
+     box-shadow: $box-shadow;
   }
 }
 
 .landing-page-image {
-  width: 43rem;
-  border: 2rem solid $color-grey;
-  border-radius: 0.2rem;
-  box-shadow: $box-shadow;
+  width: 39rem;
+
 }
 
 .dev {

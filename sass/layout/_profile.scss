@@ -2,8 +2,19 @@
   display: flex;
   &__image {
     position: relative;
+    height: 105%;
+    background: linear-gradient(
+      130deg,
+      #ff7a18,
+      #af002d 41.07%,
+      #319197 76.05%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &-img {
       width: 39rem;
+      padding: 2rem;
     }
     &-heading {
       position: absolute;

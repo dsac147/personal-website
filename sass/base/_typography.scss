@@ -1,8 +1,9 @@
 .section {
   &-heading {
-    font-family: Voga-Medium;
+    font-family: 'Oswald', sans-serif;
     color: $color-yellow;
-    font-size: 13rem;
+    font-size: 10rem;
+    line-height: 110%;
     text-shadow: $text-shadow;
     z-index: 10;
   }

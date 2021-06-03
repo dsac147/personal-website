@@ -13,7 +13,9 @@
     &-image {
       position: relative;
       min-width: 40rem !important;
-      background-color: $color-grey;
+      background: linear-gradient(
+130deg
+,#ff7a18,#af002d 41.07%,#319197 76.05%);
       display: flex;
       justify-content: center;
       align-items: center;
