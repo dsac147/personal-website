@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger, CSSRulePlugin);
 
 const navMenus = document.body.querySelectorAll('.nav-item');
-console.log(navMenus);
+
 //music button functionality
 
 document.getElementById('nav-toggle').addEventListener('change', function () {
@@ -248,3 +248,5 @@ window.addEventListener(
   },
   false,
 );
+
+amountscrolled();
