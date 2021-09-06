@@ -670,8 +670,7 @@ li {
     padding: 5rem 2rem 1rem 2rem;
     font-size: 2rem;
     line-height: 2.1rem;
-    font-weight: 400;
-    text-transform: uppercase; }
+    font-weight: 400; }
   .content__right-date {
     padding: 1rem 2rem 1rem 2rem;
     color: #ffd032;
@@ -690,7 +689,6 @@ li {
     text-decoration: none; }
 
 .externallink {
-  font-size: 4rem;
   background: #e84118;
   color: #e84118;
   border: none;
