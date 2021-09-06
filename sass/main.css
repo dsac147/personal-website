@@ -1006,7 +1006,6 @@ li {
   font-size: 2rem;
   line-height: 2.1rem;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .content__right-date {
@@ -1042,7 +1041,6 @@ li {
 }
 
 .externallink {
-  font-size: 4rem;
   background: #e84118;
   color: #e84118;
   border: none;
